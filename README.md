@@ -1,2 +1,2 @@
 # cdn
-PicGo-CDN
+PicGo
