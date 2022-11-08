@@ -1,0 +1,398 @@
+//全局布局美化代码
+body { 
+    // background-image:url(../images/background.jpg); //背景图片地址 
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    }
+
+//调整段落间距
+p {
+  margin: 0 0 10px 0;
+}
+
+//博客菜单栏设置
+
+//菜单栏的透明度设置
+.header-inner { 
+    background: rgba(255,255,255,0.85);
+    border-radius: 0px 0px 30px 30px; //边框圆角
+    box-shadow: 8px 7px 2px 0 rgba(0,0,0,0.12), 7px 4px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12); 
+    }
+
+//博客侧边栏设置
+    
+//侧边栏的透明度设置
+.sidebar { 
+    transition-duration: 0.4s;
+    opacity: 0.85; // 透明度
+    border-radius: 30px 30px 30px 30px; //边框圆角
+    }
+//侧边栏内部
+.sidebar-inner {
+    background: var(--content-bg-color);
+    border-radius: 30px 30px 30px 30px; //边框圆角
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09); 
+    box-sizing: border-box;
+    color: var(--text-color);
+    opacity: 0;
+    box-shadow: 8px 7px 2px 0 rgba(0,0,0,0.12), 7px 4px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12); 
+    }
+
+/* 分类页样式 began */
+.category-list-link:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 15px 2px rgba(0,0,0,.12), 0 0 6px 0 rgba(104, 104, 105, 0.1);
+  border-radius: 15px;
+  padding: 6px 16px;
+  margin-left: 0px;
+  font-size: 16px;
+  transition-duration: 0.15s;
+  //display:flex;
+}
+a.category-list-link:before {
+  top: 10px;
+  width: 18px;
+  height: 18px;
+  content: "📚";
+  margin-right: 5px;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 15px;
+  line-height: 18px;
+}
+/* 分类页样式 end */
+
+/*
+***
+  归档部分美化
+**
+*/
+
+// 改变归档竖线彩带效果
+.posts-collapse::before {
+  background: linear-gradient(180deg,#f79533 0,#f37055 15%,#ef4e7b 30%,#a166ab 44%,#5073b8 58%,#1098ad 72%,#07b39b 86%,#6dba82 100%);
+  opacity: 0.3
+}
+
+.page-archive .posts-collapse .archive-move-on {
+  background-color: #fc6423;
+}
+
+// 改变归档彩球颜色
+.posts-collapse .collection-title::before {
+  background-color: #fc6423;
+}
+.posts-collapse .collection-year::before {
+  background-color: blueviolet
+}
+.posts-collapse .post-header::before {
+  background-color: gray;
+  opacity: 0;
+}
+
+// 改变归档日期颜色以及发布内容部分
+.posts-collapse .post-meta {
+  color: #5073b8;
+  font-weight: 900;
+}
+.posts-collapse .post-title {
+  margin-left: 5px;
+}
+
+// 设置归档方框美化
+.posts-collapse .post-header {
+  position: relative;
+  box-shadow: 0 1px 3px #6f42c100, 0 0px 6px #6f42c1;
+  padding: 2px 10px;
+  margin: 8px;
+  border-bottom: none;
+  border-radius: 10px;
+  width: 85%;
+}
+.posts-collapse .post-header:hover {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  transition-property: inherit;
+  box-shadow: 0 1px 3px #6f42c100, 0 0px 17px 2px #6f42c1;
+  transform: scale(1.02) !important;
+}
+.posts-collapse .post-title a, .posts-collapse .post-title span.exturl {
+  font-size: small;
+}
+
+//搜索框（local-search）的透明度设置
+.popup {
+    opacity: 0.85;
+    }
+
+
+// 博客文章设置
+
+// 主文章页面
+.post-block {
+    background-color: rgba(255, 255, 255, 1);
+    margin-bottom: 24px;
+    padding: 20px;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 8px 7px 2px 0 rgba(0,0,0,0.12), 7px 4px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
+    }
+.post-block:hover {
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    box-shadow:0 2px 4px 0px rgba(0,0,0,0.1),
+      0 4px 8px 0px rgba(0,0,0,0.1),
+      0 8px 16px 0px rgba(0,0,0,0.1),
+      0 16px 32px 0px rgba(0,0,0,0.1) !important;
+}
+.post-block.home:hover {
+  transform: scale(1.02);
+}
+
+// 后面的文章
+main > div > div.content-wrap > div > article:nth-child(n + 2) {                                                                                                                                           // 后面的文章
+  border-radius: 30px;
+  box-shadow: 1px 2px 8px 4px rgba(
+    0,0,0,0.15);  
+  background: rgba(255,255,255,0.9);                                                                                                                                         // 增加透明度
+}
+
+// 阅读全文按钮美化
+.btn {
+  padding: 3px 15px;
+  color: #34495e!important;
+  box-shadow: 0 0 0 1px #34495e;
+  border: 1px;
+  border-radius: 15px;
+  text-decoration: none!important;
+  transition: color .3s ease-in-out;
+  display: inline-block;
+  line-height: 2;
+}
+.btn:hover {
+  color: #fff!important
+  border-color: #222;
+  background: #34495e;
+}
+
+// 页面分页
+.pagination {                                                                                                                                                                                   // 页面分页
+  border-radius: 15px;                                                                                                                                        // 扁平化,两边非对称
+  box-shadow: 1px 2px 8px 4px rgba(0,0,0,0.15);
+  background: rgba(255,255,255,0.9);                                                                                                                                         // 增加透明度
+}
+.pagination:hover {
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  box-shadow:0 2px 4px 0px rgba(0,0,0,0.1),
+    0 4px 8px 0px rgba(0,0,0,0.1),
+    0 8px 16px 0px rgba(0,0,0,0.1),
+    0 16px 32px 0px rgba(0,0,0,0.1) !important;
+}
+
+// 文章内容美化设置
+
+//文章内容的透明度设置 
+.content-wrap { 
+    opacity: 0.85; 
+    padding-left: 15px;
+    margin-top: $headband-height;
+    }
+@media (max-width: 767px) {
+  .content-wrap {
+    padding: $content-mobile-padding;
+    width: 100%;
+  }
+}
+
+// 文章字体设为高级的灰色
+.post-body {
+  color: #333;
+}
+
+// Code部分美化
+code {
+  padding: 2px 4px;
+  word-wrap: break-word;
+  color: #ff7600;
+  background: #fbf7f8;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+// 去掉图片的边框,显得更加自然
+.posts-expand .post-body img {
+  border: 1px;
+}
+
+// 鼠标选择的段落变成蓝色
+::selection {
+  background-color: #00BFFF;
+  color: #fff;
+}
+
+// 对页面文章的美化
+.posts-expand .home .post-title {
+  font-size: 1.2em;
+  text-align: left;
+  border-left: #7fb8ee 8px solid;
+  padding-left: 12px;
+}
+.post-title {
+  font-weight: 900!important;
+}
+.posts-expand .home .post-meta {
+  text-align: left;
+  margin: 8px 0 15px!important;
+}
+
+// 文章底部标签样式
+.posts-expand .post-tags a {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+  font-family: 'Comic Sans MS', sans-serif;
+  transition: .2s ease-out;
+  padding: 3px 10px;
+  margin: 5px;
+  background: #f5f5f5;
+  border-bottom: none;
+  border-radius: 15px;
+
+  +mobile() {
+    padding: 1px 3px;
+    font-size: 8px;
+  }
+
+  &:hover {
+    background: #34495e;
+    color: #fff;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+// 修改代码块mac-panel上方颜色
+.highlight-container {
+  background: #7fb8ee
+}
+
+// 光标放到文章列表上面的时候,会变成彩色
+.posts-expand .post-title-link::before {
+  background-image: linear-gradient(90deg,#a166ab 0,#ef4e7b 25%,#f37055 50%,#ef4e7b 75%,#a166ab 100%);
+}
+
+/*
+***
+  滚动条美化
+**
+*/
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+::-webkit-scrollbar-button:start:increment,::-webkit-scrollbar-button:end:decrement {
+  display: none;
+}
+::-webkit-scrollbar-corner {
+  display: block;
+}
+::-webkit-scrollbar-thumb {
+  // border-radius: 8px;
+  background-color: rgba(0,0,0,.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  // border-radius: 8px;
+  background-color: rgba(127,184,238,.5);
+}
+::-webkit-scrollbar-track,::-webkit-scrollbar-thumb {
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+}
+//::-webkit-scrollbar-track:hover {    // 按住滚动条时悬浮的样式
+//  background-color: rgba(0,0,0,.15);
+//}
+::-webkit-scrollbar-button:start {
+  width: 10px;
+  height: 10px;
+  /*background: url(../images/scrollbar_arrow.png) no-repeat 0 0;*/  /*可以添加滚动条样式*/
+}
+
+div.back-to-top {
+  border-radius: 0px 0px 100px 100px
+}
+
+/*
+友情链接页面设置
+*/
+.links-content {
+  margin-top:1rem;
+}
+.link-navigation::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.card {
+  width: 45%;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition-duration: 0.15s;
+  margin-bottom: 1rem;
+  display:flex;
+}
+.card:nth-child(odd) {
+  float: left;
+}
+.card:nth-child(even) {
+  float: right;
+}
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+}
+.card a {
+  border:none;
+}
+.card .ava {
+  width: 3rem!important;
+  height: 3rem!important;
+  margin:0!important;
+  margin-right: 1em!important;
+  border-radius:4px;
+}
+.card .card-header {
+  font-style: italic;
+  overflow: hidden;
+  width: 100%;
+}
+.card .card-header a {
+  font-style: normal;
+  color: #2bbc8a;
+  font-weight: bold;
+  text-decoration: none;
+}
+.card .card-header a:hover {
+  color: #d480aa;
+  text-decoration: none;
+}
+.card .card-header .info {
+  font-style:normal;
+  color:#a3a3a3;
+  font-size:14px;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
