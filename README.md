@@ -21,7 +21,7 @@
   
 - 关于国内使用Github图床站点dns被污染
   - 使用[ipadress](https://www.ipaddress.com/)查询`raw.githubusercontent.com`
-  - 编辑Windows下的Hosts文件添加对应ip即可解决无法访问图片的问题。
+  - 编辑Windows下的Hosts文件添加域名对应ip即可解决无法访问图片的问题。
 
 ------
 
