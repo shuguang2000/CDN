@@ -1,4 +1,11 @@
-# PicGo 图床
+# jsDelivr + Github + PicGo 图床
+
+- CDN jsDelivr
+- 仓库 Github
+- 图床 PicGo
+
+
+## PicGo 图床
 
 - PicGo 图床
   - 使用图床，能缓解站点的压力的，并生成图片的唯一链接，同时也方便管理图片。
@@ -13,9 +20,10 @@
   - [vscode](https://github.com/PicGo/vs-picgo)
   - [android](https://github.com/PicGo/flutter-picgo)
 
-# CDN
+## CDN
   - 使用CDN加速来优化网站打开速度，jsDelivr + Github便是免费且好用的CDN。
   </br>
-
-  - Github使用:<https://cdn.jsdelivr.net/gh/repository/jquery.min.js>
+  
   - Dependencies: <https://www.jsdelivr.com/>
+  - Github使用:<https://cdn.jsdelivr.net/gh/repository/jquery.min.js>
+  
