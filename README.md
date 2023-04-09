@@ -10,7 +10,7 @@
 
 - PicGo 图床
   - 使用图床，能缓解站点的压力的，并生成图片的唯一链接，同时也方便管理图片。
-  - [使用文档](https://picgo.github.io/PicGo-Doc/)
+  - [PicGo文档](https://picgo.github.io/PicGo-Doc/)
   </br>
 
   - 不同版本说明:
@@ -30,5 +30,5 @@
   </br>
   
   - Dependencies: <https://www.jsdelivr.com/>
-  - Github使用:<https://cdn.jsdelivr.net/gh/repository/jquery.min.js>
+  - Github使用CDN加速: <https://cdn.jsdelivr.net/gh/repository/xxx.js>
   
