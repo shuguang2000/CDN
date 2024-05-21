@@ -1,6 +1,6 @@
-# jsDelivr + Github + PicGo 图床
+# JSDelivr + Github + PicGo 图床
 
-- CDN: [jsDelivr](https://www.jsdelivr.com/)
+- CDN: [JSDelivr](https://www.jsdelivr.com/)
 - 仓库: [Github](https://github.com/)
 - 图床: [PicGo](https://github.com/Molunerfinn/PicGo/releases)
 
