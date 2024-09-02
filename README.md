@@ -12,11 +12,9 @@
 ## CDN
 
 - 使用CDN加速来优化网站打开速度，jsDelivr + Github便是免费且好用的CDN。
-<br>
-
-  - Dependencies: <https://www.jsdelivr.com/>
-  - Github使用CDN加速(默认是main分支):
-    - `https://cdn.jsdelivr.net/gh/github_username/your_repository@main`
+- Dependencies: <https://www.jsdelivr.com/>
+- Github使用CDN加速(默认是main分支):
+  - `https://cdn.jsdelivr.net/gh/github_username/your_repository@main`
 
 ------
 
