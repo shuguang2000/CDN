@@ -22,7 +22,7 @@
 
 ## PicGo 图床
 
-- 使用[PicGo图床](https://picgo.github.io/PicGo-Doc/)，能缓解站点的压力的，并生
+- 使用[PicGo图床](https://picgo.github.io/PicGo-Doc/)，能缓解站点的压力的，并生永久链接。
 <br>
 
 - 使用说明：
@@ -32,7 +32,7 @@
     - 上传前选中写好的图片名称，就可使用快捷键`Ctrl + Alt + U`上传剪切板的图片并更改图片文件名。
     - 也可以使用快捷键`Ctrl + Alt + U`上传Explorer中的图片。
   - Windows本地使用PigGo
-    - 下载好软件后，按图下配置好：
+    - 下载好软件后，按图下配置好并切换为Github图床：
     ![windows本地配置Picgo](https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/20240902235032.png)
 <br>
 
