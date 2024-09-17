@@ -24,11 +24,11 @@
 <br>
 
 - 使用说明：
-  - **推荐使用VS-PicGo插件**
+  - **推荐使用[VS-PicGo插件](https://github.com/PicGo/vs-picgo)**
     - 安装好插件后，按图下配置好：
     ![VS-PicGo配置](https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/VS-PicGo配置.png)
     - 上传前选中写好的图片名称，就可使用快捷键`Ctrl + Alt + U`上传剪切板的图片并更改图片文件名。
-    - 也可以使用快捷键`Ctrl + Alt + U`上传Explorer中的图片。
+    - 也可以使用快捷键`Ctrl + Alt + E`上传Explorer中的图片。
   - Windows本地使用PigGo
     - 下载好软件后，按图下配置好并切换为Github图床：
     ![windows本地配置Picgo](https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/20240902235032.png)
